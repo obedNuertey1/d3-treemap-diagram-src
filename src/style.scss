@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fredoka:wght@300;400;500&family=Smooch+Sans:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$borderedButtons: none;
+$borderRadius: 5px;
+$noTextDecoration: none;
+$buttonPadding: 0;
+$fredokaFont: "Fredoka", sans-serif;
+$crimsonTextFont: "Crimson Text", serif;
+$concertOneFont: "Concert One", cursive;
+$smoochSans: "Smooch Sans", sans-serif;
+$sansSerif: sans-serif;
+$wofSomething: "wticons";
+
+$backgroundColor: #1d3557;
+html {
+  font-size: 10px;
+}
+
+.wrapperContainer {
+  width: 90vw;
+  max-height: 200vh;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+
+nav > p {
+  color: rgb(81, 0, 128);
+}
+
+nav > p:hover {
+  cursor: pointer;
+}
+
+nav > p:active {
+  color: rgb(255, 21, 0);
+}
+
+nav {
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 16% 1% 12% 1% 15%;
+  width: 100%;
+  place-content: center;
+}
+
+.discriptionDiv {
+  text-align: center;
+}
+
+.discriptionDiv > h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.discriptionDiv > p {
+  font-size: 1.6rem;
+}
+
+.svgDiv {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  place-content: center;
+}
+#mainSvg {
+}
+#legend {
+  background-color: black;
+  opacity: 7.5;
+}
+
+#legend > g > text {
+  fill: white;
+}
+
+#tooltipDiv {
+  width: 100%;
+  //  height: 100%;
+  text-align: center;
+  background-color: black;
+  padding: 10px 0 10px 0;
+  border-radius: 3px;
+  color: white;
+  border: 1px solid white;
+  opacity: 0.6;
+  font-size: 1.3rem;
+}
